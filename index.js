@@ -33,6 +33,6 @@
   }
   function onConnectedHandler(addr, port){
     require('./express.js')
-    console.log(`${tags} online at ${addr}:${port}`)
+    console.log(`${client.username} online at ${addr}:${port}`)
   }
 }

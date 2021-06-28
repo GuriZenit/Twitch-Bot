@@ -32,7 +32,7 @@
     }
   }
   function onConnectedHandler(addr, port){
-    require('./express.js').run(channel, tags, msg, self, client, args)
+    require('./express.js')
     console.log(`${tags} online at ${addr}:${port}`)
   }
 }

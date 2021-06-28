@@ -1,0 +1,24 @@
+{
+  "name": "gurizenit_bot",
+  "version": "1.0.0",
+  "description": "Twitch bot for my channel in twicth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuriZenit/Twitch-Bot.git"
+  },
+  "author": "GuriZenit gurizenit@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuriZenit/Twitch-Bot/issues"
+  },
+  "homepage": "https://github.com/GuriZenit/Twitch-Bot#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "tmi.js": "^1.8.3"
+  }
+}

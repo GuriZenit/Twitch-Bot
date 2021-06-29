@@ -4,7 +4,6 @@ module.exports = {
     password: process.env.TOKEN
   },
   channels: [
-    'gurizenit',
-    'cfm_official'
+    'gurizenit'
   ]
 }

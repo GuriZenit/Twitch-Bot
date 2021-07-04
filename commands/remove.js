@@ -1,5 +1,10 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
+  
   let comando = args.shift().toLowerCase()
-  db.delete(comando)
+  remove(comando)
   client.say(channel, `Comando ${comando} foi apagado!`)
+  
+  async function remove(arg) {
+    await db.delete(arg)
+  }
 }

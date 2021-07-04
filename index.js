@@ -14,6 +14,10 @@
   
   function onMenssageHandler(channel, tags, msg, self){
     
+    async function getComand(arg) {
+      return await db.get(arg)
+    }
+    
     if(!msg.startsWith(prefix)) return;
     if(self) return;
     
@@ -23,8 +27,6 @@
     
     const command = args.shift()
     .toLowerCase()
-
-    
     
     try {
       const commandFile = require(`./commands/${command}.js`)
@@ -32,7 +34,7 @@
       commandFile.run (channel, tags, msg, self, client, args, db)
     }catch(err){
       if(db.get(command)){
-        client.say(channel, db.get(command))
+        client.say(channel, getComand(command))
       }
     }
   }

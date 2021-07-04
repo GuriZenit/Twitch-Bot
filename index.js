@@ -33,9 +33,7 @@
       
       commandFile.run (channel, tags, msg, self, client, args, db)
     }catch(err){
-      if(db.get(command)){
-        client.say(channel, getComand(command))
-      }
+      require('./await.js').run(channel, client, args, db)
     }
   }
   function onConnectedHandler(addr, port){

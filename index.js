@@ -23,7 +23,7 @@
     
     const command = args.shift()
     .toLowerCase()
-    
+
     
     
     try {
@@ -31,7 +31,9 @@
       
       commandFile.run (channel, tags, msg, self, client, args, db)
     }catch(err){
-      client.say(channel, `Tenho apenas dois comandos: ${prefix}add | ${prefix}remove`)
+      if(db.get(command)){
+        client.say(channel, db.get(command))
+      }
     }
   }
   function onConnectedHandler(addr, port){

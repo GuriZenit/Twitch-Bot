@@ -5,6 +5,9 @@
   const client = new tmi.client(login)
   const prefix = config.prefix;
   
+  const Database = require("@replit/database")
+  const db = new Database()
+  
   client.on('message', onMenssageHandler)
   client.on('connected', onConnectedHandler)
   client.connect()
@@ -28,7 +31,7 @@
       
       commandFile.run (channel, tags, msg, self, client, args)
     }catch(err){
-      console.log('No command found')
+      client.say(channel, `Tenho apenas dois comandos: ${prefix}add | ${prefix}remove`)
     }
   }
   function onConnectedHandler(addr, port){

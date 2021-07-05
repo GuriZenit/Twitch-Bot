@@ -29,10 +29,9 @@ process.env.TOKEN
 # Or this
 process.env['TOKEN']
 ```
-###### The database on this bot only work on Replit
-#
-
-#### Licence: [MIT](https://github.com/GuriZenit/twitch-bot/blob/master/LICENSE)
+###### The database on this bot only work on Replit!
 #
 ###### • [Replit](https://replit.com/repls)
 ###### • [Website](https://www.gurizenit.tk)
+# Licence
+[MIT](https://github.com/GuriZenit/twitch-bot/blob/master/LICENSE)

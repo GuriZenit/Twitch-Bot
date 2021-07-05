@@ -1,18 +1,18 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   const defaults = ['add', 'remove', 'commands']
   
-  if(!args[0]) return client.say(channel, "Comando não pode ficar vazio"); 
+  if(!args[0]) return client.say(channel, "Command cannot be empty!"); 
   
   let comando = args.shift().toLowerCase()
   
   if (defaults.indexOf(comando) >= 0) {
     console.log(defaults.indexOf(comando))
-    return client.say(channel, "Não é possível remover esse comando!")
+    return client.say(channel, "Cannot remove this command!")
   }
   if (await db.get(comando)) {
     await db.delete(comando)
-    client.say(channel, `Comando ${comando} foi apagado!`)
+    client.say(channel, `Command ${command} has been deleted!`)
   } else {
-    client.say(channel, `Comando ${comando} não existe!`)
+    client.say(channel, `Command ${command} does not exist!`)
   }
 }

@@ -9,8 +9,9 @@ This Twitch bot has only three commands but they are enough for you to be able t
 # Remove the command specified
 
 !commands
-# Show all commands 
+# Show all commands
 ```
+You can test these commands [here](https://www.twitch.tv/popout/gurizenit/chat)
 ## Usage
 To get a token for your bot you need to see [this tutorial](https://dev.twitch.tv/docs/authentication) and put then on secret's Replit!
 ```
@@ -23,5 +24,6 @@ process.env.TOKEN
 # Or this
 process.env['TOKEN']
 ```
-###### The database on this bot only work on [Replit](https://replit.com/repls)!
+###### The database on this bot only work on Replit
+###### • [Replit](https://replit.com/repls)
 ###### • [Website](https://www.gurizenit.tk)

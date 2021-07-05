@@ -1,7 +1,7 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   const defaults = ['add', 'remove', 'commands']
   
-  if(!args[1]) return client.say(channel, "Comando não pode ficar vazio"); 
+  if(!args[0]) return client.say(channel, "Comando não pode ficar vazio"); 
   
   let comando = args.shift().toLowerCase()
   

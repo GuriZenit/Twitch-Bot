@@ -12,7 +12,7 @@
     "url": "git+https://github.com/GuriZenit/Twitch-Bot.git"
   },
   "author": "GuriZenit gurizenit@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GuriZenit/Twitch-Bot/issues"
   },

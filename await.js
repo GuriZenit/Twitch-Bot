@@ -1,6 +1,6 @@
-module.exports.run = async (channel, client, args, db) => {
-  let comando = args.shift().toLowerCase()
-  const value = await db.get(comando)
+module.exports.run = async (channel, client, command, db) => {
+  
+  const value = await db.get(commamd)
   
   if(!value)return;
   

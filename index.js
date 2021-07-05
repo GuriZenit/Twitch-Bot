@@ -14,10 +14,6 @@
   
   function onMenssageHandler(channel, tags, msg, self){
     
-    async function getComand(arg) {
-      return await db.get(arg)
-    }
-    
     if(!msg.startsWith(prefix)) return;
     if(self) return;
     
@@ -33,7 +29,7 @@
       
       commandFile.run (channel, tags, msg, self, client, args, db)
     }catch(err){
-      require('./await.js').run(channel, client, args, db)
+      require('./await.js').run(channel, client, command, db)
     }
   }
   function onConnectedHandler(addr, port){

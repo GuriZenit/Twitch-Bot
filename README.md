@@ -12,6 +12,11 @@ This Twitch bot has only three commands but they are enough for you to be able t
 # Show all commands
 ```
 You can test these commands [here](https://www.twitch.tv/popout/gurizenit/chat)
+## Examples
+Adding command:
+![Add command](https://i.imgur.com/xFGxB62.jpg)
+Removing command:
+![Remove command](https://i.imgur.com/gEcowkP.jpg)
 ## Usage
 To get a token for your bot you need to see [this tutorial](https://dev.twitch.tv/docs/authentication) and put then on secret's Replit!
 ```

@@ -28,6 +28,7 @@
       const commandFile = require(`./commands/${command}.js`)
       
       commandFile.run (channel, tags, msg, self, client, args, db)
+      
     }catch(err){
       require('./await.js').run(channel, client, command, db)
     }

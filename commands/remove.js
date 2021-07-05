@@ -1,7 +1,7 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   const defaults = ['add', 'remove', 'commands']
   
-  if(!args) return;
+  if(args == undefined) return;
   
   let comando = args.shift().toLowerCase()
   

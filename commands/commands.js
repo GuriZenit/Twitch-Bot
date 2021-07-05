@@ -4,9 +4,9 @@ module.exports.run = async (channel, tags, msg, self, client, args, db) => {
 
   console.log(value)
 
-  var dados = '| ';
+  var dados = '┃ ';
   for (values in value) {
-    dados += `${values} | `
+    dados += `${values} ┃ `
   }
-  client.say(channel, `Todos os comandos: ${dados} add | remove | commands |`)
+  client.say(channel, `Todos os comandos: ${dados} add ┃ remove ┃ commands ┃`)
 }

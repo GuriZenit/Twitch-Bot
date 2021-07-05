@@ -1,9 +1,9 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   const defaults = ['add', 'remove', 'commands']
-
-  let comando = args.shift().toLowerCase()
   
-  if(!comando) return;
+  if(!args) return;
+  
+  let comando = args.shift().toLowerCase()
   
   if (defaults.indexOf(comando) >= 0) {
     console.log(defaults.indexOf(comando))

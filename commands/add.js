@@ -1,9 +1,9 @@
 module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   const defaults = ['add', 'remove', 'commands']
   
-  let comando = args.shift().toLowerCase()
+  if(!args) return;
   
-  if(!comando) return;
+  let comando = args.shift().toLowerCase()
   
   if(defaults.indexOf(comando) >= 0){
     return client.say(channel, `Não é possível adicionar esse comando!!`)

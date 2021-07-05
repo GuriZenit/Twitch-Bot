@@ -5,6 +5,7 @@ module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   
   let comando = args.shift().toLowerCase()
   
+  if(!args[0]) return client.say(channel, "A descrição não pode ficar vazia");
   if(defaults.indexOf(comando) >= 0){
     return client.say(channel, `Não é possível adicionar esse comando!!`)
   }

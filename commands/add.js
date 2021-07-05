@@ -11,5 +11,5 @@ module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   }
   
   await db.set(comando, args.join(" "))
-  client.say(channel, `Command ${command} added!`)
+  client.say(channel, `Command ${comando} added!`)
 }

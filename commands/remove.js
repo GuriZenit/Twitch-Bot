@@ -11,8 +11,8 @@ module.exports.run = async (channel, tags, msg, self, client, args, db) => {
   }
   if (await db.get(comando)) {
     await db.delete(comando)
-    client.say(channel, `Command ${command} has been deleted!`)
+    client.say(channel, `Command ${comando} has been deleted!`)
   } else {
-    client.say(channel, `Command ${command} does not exist!`)
+    client.say(channel, `Command ${comando} does not exist!`)
   }
 }

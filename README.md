@@ -33,5 +33,5 @@ process.env['TOKEN']
 #
 ###### • [Replit](https://replit.com/repls)
 ###### • [Website](https://www.gurizenit.tk)
-# Licence
+## Licence
 [MIT](https://github.com/GuriZenit/twitch-bot/blob/master/LICENSE)

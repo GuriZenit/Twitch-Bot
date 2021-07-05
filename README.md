@@ -18,7 +18,7 @@ Adding command:
 Removing command:
 ![Remove command](https://i.imgur.com/gEcowkP.jpg)
 ## Usage
-To get a token for your bot you need to see this [tutorial](https://dev.twitch.tv/docs/authentication) and put then on secret's Replit!
+To get a token for your bot you need to see this [tutorial](https://dev.twitch.tv/docs/authentication) and put them on secret's Replit!
 ```
   "TOKEN": "TWITCH-TOKEN",
   "USERNAME": "TWITCH-USER"
@@ -30,7 +30,7 @@ process.env.TOKEN
 process.env['TOKEN']
 ```
 ###### The database on this bot only work on Replit!
-#
+## Links
 ###### • [Replit](https://replit.com/repls)
 ###### • [Website](https://www.gurizenit.tk)
 ## Licence

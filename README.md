@@ -1,4 +1,4 @@
-# Twitch-Bot
+# Twitch Bot
 This Twitch bot has only three commands but they are enough for you to be able to add as many commands as you want without editing the source code!
 ## Commands
 ```

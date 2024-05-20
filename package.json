@@ -19,7 +19,7 @@
   "homepage": "https://github.com/GuriZenit/Twitch-Bot#readme",
   "dependencies": {
     "@replit/database": "^2.0.1",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "tmi.js": "^1.8.3"
   }
 }
